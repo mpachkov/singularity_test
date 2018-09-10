@@ -5,7 +5,7 @@ From: singularityhub/ubuntu
     exec echo "The runscript is the containers default runtime command!" && cat /opt/text.txt
 
 %files
-   /scicore/home/nimwegen/pachko/singularity/test1/test.txt    /opt/
+   
 %environment
     VARIABLE=MEATBALLVALUE
     export VARIABLE
@@ -14,4 +14,5 @@ From: singularityhub/ubuntu
    AUTHOR mike
 
 %post
-    echo "Mike: I am done!"
+    echo 'Mike: MyTest!!! '
+    echo 'Mike: I am done!'
