@@ -2,7 +2,7 @@ Bootstrap: shub
 From: singularityhub/ubuntu
 
 %runscript
-    exec echo "The runscript is the containers default runtime command!" && cat /opt/text.txt
+    exec echo "The runscript is the containers default runtime command!" && cat /opt/mytest/test.txt
 
 %files
    
@@ -14,5 +14,5 @@ From: singularityhub/ubuntu
    AUTHOR mike
 
 %post
-    echo 'Mike: MyTest!!! '
-    echo 'Mike: I am done!'
+    mkdir -p /opt/mytest
+    echo 'Mike: MyTest!!!' > /opt/mytest/test.txt
